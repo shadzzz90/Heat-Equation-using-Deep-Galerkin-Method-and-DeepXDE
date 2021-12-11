@@ -1,0 +1,1 @@
+# Solution-Head-Conduction-using-Deep-Galerkin-Method
