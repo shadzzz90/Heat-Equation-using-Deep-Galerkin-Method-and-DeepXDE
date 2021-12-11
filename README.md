@@ -1,1 +1,1 @@
-# Solution-Head-Conduction-using-Deep-Galerkin-Method
+# Heat-Conduction-using-Deep-Galerkin-Method
