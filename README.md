@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the unofficial code repository for the Deep Galerkin Method (DGM), a transformative deep learning algorithm developed to solve high-dimensional Partial Differential Equations (PDEs). Here, we attempt to replicate and delve into the paper's claims of leveraging deep neural networks to find approximate solutions for intricate PDEs, circumventing the pitfalls of conventional mesh-centric methodologies.
+Welcome to the unofficial code repository for the Deep Galerkin Method (DGM), a transformative deep learning algorithm developed to solve high-dimensional Partial Differential Equations (PDEs). Here, we attempt to replicate and delve into the paper's claims of leveraging deep neural networks to find approximate solutions for parabolic PDE (i.e. heat equation), circumventing the pitfalls of conventional mesh-centric methodologies.
 
 ## Key Aspects
 
@@ -38,9 +38,9 @@ Welcome to the unofficial code repository for the Deep Galerkin Method (DGM), a 
 
 Immerse into the DGM through our Jupyter Notebooks:
 
-1. **[Introduction to DGM](link_to_intro_notebook.ipynb)**
-2. **[Navigating High-dimensional Free Boundary PDEs](link_to_free_boundary_notebook.ipynb)**
-3. **[Burgers’ Equation Decoded with DGM](link_to_burgers_notebook.ipynb)**
+1. **[Solving heat equation by Finite Difference Method](link_to_intro_notebook.ipynb)**
+2. **[Solving heat equation by Deep Galerkin Method](link_to_free_boundary_notebook.ipynb)**
+3. **[Solving heat equation using DeepXDE](link_to_burgers_notebook.ipynb)**
 
 ## Contributing 
 
