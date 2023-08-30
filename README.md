@@ -1,72 +1,86 @@
-# Unofficial Implementation of the Deep Galerkin Method (DGM) for PDEs
+# Heat-Equation-using-Deep-Galerkin-Method
 
-## Overview
+This repository delves into the numerical solution of the Heat Equation using the innovative Deep Galerkin Method (DGM) and the DeepXDE library. As a benchmark, the solutions obtained using DGM are compared with those derived from the traditional Finite Difference Method (FDM).
 
-Welcome to the unofficial code repository for the Deep Galerkin Method (DGM), a transformative deep learning algorithm developed to solve high-dimensional Partial Differential Equations (PDEs). Here, we attempt to replicate and delve into the paper's claims of leveraging deep neural networks to find approximate solutions for parabolic PDE (i.e. heat equation), circumventing the pitfalls of conventional mesh-centric methodologies.
+## Table of Contents
 
-## Key Aspects
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [License](#license)
 
-- **Mesh-Independence**: Designed to thrive in high-dimensional realms where meshes falter.
-- **Adoption of Random Sampling**: Forgoing grids, DGM leans on random samples across space and time.
-- **Extensive Validations**: Probed against diverse PDEs from high-dimensional free boundary ones to the Hamilton-Jacobi-Bellman PDE and Burgers’ equation.
-- **Broad-Based Solutions**: Potent enough to infer a spectrum of boundary and physical conditions, with particular efficacy observed for Burgers’ equation.
-- **Theoretical Insight**: Features a theorem delineating neural networks' approximation prowess for specific quasilinear parabolic PDEs.
+## Introduction
 
-## Setting Sail
+The Heat Equation is a fundamental partial differential equation (PDE) that describes how temperature changes over space and time. While traditional methods like the Finite Difference Method have been employed for decades to solve it, recent advances in deep learning present alternative methodologies, like the Deep Galerkin Method, offering potentially faster and more accurate solutions.
 
-### Preliminaries
+In this repository, we explore how the Deep Galerkin Method, in tandem with the DeepXDE library, can be employed to solve the Heat Equation and how these solutions stand in comparison to those obtained from the FDM.
 
-1. Ensure [Python 3.8](https://www.python.org/downloads/) or its newer siblings are available.
-2. Onboard the requisite packages:
-    ```bash
-    pip install -r requirements.txt
-    ```
+## Installation
 
-### Instructions
+**Prerequisites**: Ensure you have Python 3.x installed.
 
-1. **DGM Model Training**:
+1. Clone the repository:
+
    ```bash
-   python train_dgm.py --epochs 5000 --batch_size 512
+   git clone https://github.com/shadzzz90/Heat-Equation-using-Deep-Galerkin-Method.git
    ```
 
-2. **Evaluating and Plotting**:
+2. Navigate into the directory:
+
    ```bash
-   python evaluate_dgm.py --model_path path_to_saved_model
+   cd Heat-Equation-using-Deep-Galerkin-Method
    ```
 
-## Interactive Jupyter Notebooks
+3. (Optional) Create a virtual environment:
 
-Immerse into the DGM through our Jupyter Notebooks:
+   ```bash
+   python -m venv env
+   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   ```
 
-1. **[Solving heat equation by Finite Difference Method](link_to_intro_notebook.ipynb)**
-2. **[Solving heat equation by Deep Galerkin Method](link_to_free_boundary_notebook.ipynb)**
-3. **[Solving heat equation using DeepXDE](link_to_burgers_notebook.ipynb)**
+4. Install the required packages:
 
-## Contributing 
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Any suggestions, findings, or insights? Contributions are heartily encouraged! Kindly peep into [CONTRIBUTING.md](CONTRIBUTING.md) for the modus operandi.
+## Usage
 
-## Acknowledgment
+Each method (DGM and FDM) is encapsulated in separate Python scripts. To run any of the scripts:
 
-While this is an unofficial rendition, all credit for the original research and method goes to the paper's authors. Do cite the original work:
-
-```bibtex
-@article{authorsYearDGM,
-  title={DGM: A deep learning algorithm for solving partial differential equations},
-  author={Original Authors},
-  journal={Original Journal},
-  year={Original Year}
-}
+```bash
+python [script_name].py
 ```
 
-## Licensing
+Replace `[script_name]` with the desired script, e.g., `heat_equation_DGM.py`.
 
-Freely available under the MIT License. Check out [LICENSE.md](LICENSE.md) for specifics.
+## Features
 
-## Get in Touch
+- **Deep Galerkin Method**: A contemporary approach leveraging deep learning to solve the Heat Equation.
 
-For queries or suggestions, feel free to open an issue or ping at [email@example.com](mailto:email@example.com).
+- **Finite Difference Method**: Traditional numerical technique used as a benchmark for comparison.
 
----
+- **DeepXDE Integration**: Utilizing the DeepXDE library to facilitate and streamline the solution process using DGM.
 
-Embracing the meshfree revolution with DGM. Dive in and explore!# Heat-Conduction-using-Deep-Galerkin-Method
+
+## License
+
+This project is under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
+
+Of course! I'll integrate a references section into the README for the specified resources. 
+
+
+## References
+
+- **Deep Galerkin Method (DGM)**:
+  - Sirignano, J., & Spiliopoulos, K. (2018). DGM: A deep learning algorithm for solving partial differential equations. *Journal of Computational Physics*, 375, 1339-1364.
+
+- **DeepXDE Library**:
+  - Lu, L., Meng, X., Mao, Z., & Karniadakis, G. E. (2019). DeepXDE: A deep learning library for solving differential equations. *arXiv preprint arXiv:1907.04502*.
+...
+
+
+
+Happy computing!
+
