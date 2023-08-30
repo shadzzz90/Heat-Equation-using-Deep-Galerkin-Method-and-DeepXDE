@@ -1,4 +1,4 @@
-# Heat-Equation-using-Deep-Galerkin-Method
+# Heat Equation using Deep-Galerkin-Method and DeepXDE
 
 This repository delves into the numerical solution of the Heat Equation using the innovative Deep Galerkin Method (DGM) and the DeepXDE library. As a benchmark, the solutions obtained using DGM are compared with those derived from the traditional Finite Difference Method (FDM).
 
