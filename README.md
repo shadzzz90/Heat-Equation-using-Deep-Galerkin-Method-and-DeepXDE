@@ -53,7 +53,7 @@ Each method (DGM and FDM) is encapsulated in separate Python scripts. To run any
 python [script_name].py
 ```
 
-Replace `[script_name]` with the desired script, e.g., `heat_equation_DGM.py`.
+Replace `[script_name]` with the desired script, e.g., `dgmModel.py`.
 
 ## Features
 
